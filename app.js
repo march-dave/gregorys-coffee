@@ -16,7 +16,7 @@ import cookieParser from 'cookie-parser';
 
 import mongoose from 'mongoose';
 
-const MONGOURL = process.env.MONGODB_URI || 'mongodb://localhost:/property-manager'
+const MONGOURL = process.env.MONGODB_URI || 'mongodb://localhost:/gregorys-coffee'
 mongoose.connect(MONGOURL, err => {
   console.log(err || `Connected to MongoDB at ${MONGOURL}`);
 });
