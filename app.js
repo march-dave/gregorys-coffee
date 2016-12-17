@@ -16,16 +16,17 @@ import cookieParser from 'cookie-parser';
 
 import mongoose from 'mongoose';
 
-const MONGOURL = process.env.MONGODB_URI || 'mongodb://localhost:/gregorys-coffee'
-mongoose.connect(MONGOURL, err => {
-  console.log(err || `Connected to MongoDB at ${MONGOURL}`);
-});
+// const MONGOURL = process.env.MONGODB_URI || 'mongodb://localhost:/gregorys-coffee'
+// mongoose.connect(MONGOURL, err => {
+//   console.log(err || `Connected to MongoDB at ${MONGOURL}`);
+// });
 
 const port = (process.env.PORT || 8080);
 
 const app = Server.app()
 
 if (process.env.NODE_ENV !== 'production') {
+  console.log(' I am debugging mode')
   const webpackDevMiddleware = require('webpack-dev-middleware')
   const webpackHotMiddleware = require('webpack-hot-middleware')
   const config = require('./webpack.dev.config.js')

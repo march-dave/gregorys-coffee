@@ -2,6 +2,8 @@
 
 heroku config:add NODE_ENV=production
 
+heroku addons:create mongolab
+
 #Install
 
 Node.js

@@ -4,7 +4,7 @@ class app extends Component {
   render() {
     return(
       <div>
-          Hello World!!
+          Hello gregorys coffee!!
       </div>
     );
   }
