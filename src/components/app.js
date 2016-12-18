@@ -7,7 +7,7 @@ class app extends Component {
       <div>
           <NavBar />
 
-          
+
 
 
 
