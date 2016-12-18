@@ -35,12 +35,6 @@ import About from './components/About'
 import Join from './components/Join'
 
 render(
-  <Router history={browserHistory}>
-    <Route path="/" component={App}>
-      <IndexRoute component={Dashboard} />
-      <Route path="tenants" component={About} />
-      <Route path="properties" component={Join} />
-    </Route>
-  </Router>,
+  <App />,
   document.getElementById('main')
 )
