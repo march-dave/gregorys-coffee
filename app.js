@@ -13,7 +13,6 @@ import graphqlHTTP from 'express-graphql';
 // const schema = ('../data/index');
 //
 
-
 import mongoose from 'mongoose';
 
 const MONGOURL = process.env.MONGODB_URI || 'mongodb://localhost:/gregorys-coffee'

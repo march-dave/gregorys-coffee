@@ -1,16 +1,11 @@
-import React, {Component} from 'react';
+import React from 'react';
 import NavBar from './NavBar';
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return(
       <div>
           <NavBar />
-
-
-
-
-
       </div>
     );
   }
