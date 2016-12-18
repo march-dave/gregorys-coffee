@@ -9,7 +9,7 @@ module.exports = {
     './src/index'
   ],
   target: 'web',
-  output: {
+  output: { 
     path: path.join(__dirname, 'public'),
     filename: 'bundle.js',
     publicPath: '/public/'
