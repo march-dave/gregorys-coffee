@@ -6,7 +6,11 @@ class app extends Component {
     return(
       <div>
           <NavBar />
-          Hello gregorys coffee!!
+
+          
+
+
+
       </div>
     );
   }
