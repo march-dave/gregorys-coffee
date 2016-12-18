@@ -7,7 +7,7 @@ import logger from 'morgan';
 import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
 
-// import graphqlHTTP from 'express-graphql';
+import graphqlHTTP from 'express-graphql';
 
 // const api = ('../api/index');
 // const schema = ('../data/index');
