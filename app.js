@@ -16,10 +16,10 @@ import graphqlHTTP from 'express-graphql';
 
 import mongoose from 'mongoose';
 
-// const MONGOURL = process.env.MONGODB_URI || 'mongodb://localhost:/gregorys-coffee'
-// mongoose.connect(MONGOURL, err => {
-//   console.log(err || `Connected to MongoDB at ${MONGOURL}`);
-// });
+const MONGOURL = process.env.MONGODB_URI || 'mongodb://localhost:/gregorys-coffee'
+mongoose.connect(MONGOURL, err => {
+  console.log(err || `Connected to MongoDB at ${MONGOURL}`);
+});
 
 const port = (process.env.PORT || 8080);
 
