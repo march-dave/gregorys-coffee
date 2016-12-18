@@ -1,5 +1,8 @@
-import webpack from 'webpack';
-import path from 'path';
+// import webpack from 'webpack';
+// import path from 'path';
+
+const webpack = require('webpack');
+const path = require('path');
 
 module.exports = {
   debug: true,
@@ -15,7 +18,7 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/public/'
   },
-  
+
   devServer: {
     contentBase: './src'
   },
