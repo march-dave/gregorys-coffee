@@ -2,7 +2,7 @@
   "name": "gregorys-coffee",
   "version": "1.0.0",
   "description": "Project Start at Gregory's Coffee shop Heroku starter kit for React apps.",
-  "main": "./src/entry.js",
+  "main": "./src/index.js",
   "homepage": "",
   "author": "dave l",
   "license": "MIT",
