@@ -12,4 +12,8 @@ How to start localhost:8080
 
 npm start
 
+
+# Webpack run manually
+webpack --confing webpack.dev.config.js -y
+
 https://gregorys-coffee.herokuapp.com/
