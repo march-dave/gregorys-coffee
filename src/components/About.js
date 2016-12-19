@@ -1,11 +1,10 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-export default class About extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+class About extends Component {
 
   render() {
     return (<div>About</div>);
   }
 }
+
+export default About;
