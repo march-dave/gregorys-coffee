@@ -6,6 +6,6 @@ export default class About extends React.Component {
   }
 
   render() {
-    return (<div>MyComponent</div>);
+    return (<div>About</div>);
   }
 }
