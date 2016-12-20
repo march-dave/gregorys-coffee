@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 import NavBar from './NavBar';
 import Map from './Map';
 import Places from './Places';
@@ -6,8 +7,8 @@ import superagent from 'superagent';
 
 class App extends React.Component {
 
-  constructor() {
-     super();
+  constructor(props) {
+     super(props);
 
      this.state = {
        conactName: 'Contact Me',
@@ -57,6 +58,10 @@ class App extends React.Component {
               <div style={ {width:600, height:450, background: 'green'} } >
                  <Map center={location} markers={this.state.venues} />
               </div>
+
+              {this.props.children}
+              bottom
+
            </div>
 
       </div>
