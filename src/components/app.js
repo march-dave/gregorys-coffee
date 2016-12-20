@@ -5,6 +5,8 @@ import Map from './Map';
 import Places from './Places';
 import superagent from 'superagent';
 
+import app from '../styles/app.scss'
+
 class App extends React.Component {
 
   constructor(props) {
@@ -53,14 +55,15 @@ class App extends React.Component {
       <div>
           <NavBar />
 
-            <div style={ {textAlign: 'center'} } className="container">
-              <Places loc="aaa" onSearch={this.upDataSearch} venues={this.state.venues} />
-              <div style={ {width:600, height:450, background: 'green'} } >
-                 <Map center={location} markers={this.state.venues} />
-              </div>
+            <div style={ {textAlign: 'center'} } className="appContainer">
 
-              {this.props.children}
-              bottom
+                <Places loc="aaa" onSearch={this.upDataSearch} venues={this.state.venues} />
+                <div style={ {width:600, height:450, background: 'green'} } className='initial'>
+                  <Map center={location} markers={this.state.venues} />
+                </div>
+                <div className='none'>
+                  {this.props.children}
+                </div>
 
            </div>
 
