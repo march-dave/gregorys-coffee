@@ -8,8 +8,7 @@ export default class Dashboard extends React.Component {
   render() {
     return (
       <div className="text-center">
-        <h1>Welcome to Managed Properties!</h1>
-        <h3>What would you like to do?</h3>
+          <h3>Dashboard</h3>
       </div>
     );
   }
