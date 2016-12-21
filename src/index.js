@@ -32,6 +32,7 @@ import Dashboard from './components/Dashboard'
 import About from './components/About'
 import Join from './components/Join'
 import Login from './components/Login'
+import Places from './components/Places'
 
 render(
   <Router history={browserHistory}>

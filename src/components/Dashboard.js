@@ -8,7 +8,7 @@ export default class Dashboard extends React.Component {
   render() {
     return (
       <div className="text-center">
-          <h3>Dashboard</h3>
+          <h3>Home - Dashboard</h3>
       </div>
     );
   }

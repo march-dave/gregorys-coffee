@@ -28,23 +28,6 @@ class App extends React.Component {
     } )
   }
 
-  componentDidMount() {
-     const url = 'https://api.foursquare.com/v2/venues/search?ll=40.7575285,-73.9884469&oauth_token=0DWMXELULH1PCZUJVTPBZ5ISSSD30DIXN2WZGRNEU0KZW23G&v=20161209'
-     superagent
-     .get(url)
-     .query(null)
-     .set('Accept', 'text/json')
-     .end((err, res) => {
-       const venues = res.body.response.venues;
-       console.log(venues);
-
-       this.setState({
-         venues: venues
-       })
-
-     })
- }
-
   render() {
     const location = {
       lat: 40.7575285,
@@ -56,13 +39,12 @@ class App extends React.Component {
           <NavBar />
 
             <div style={ {textAlign: 'center'} } className="appContainer">
-
-                <Places loc="aaa" onSearch={this.upDataSearch} venues={this.state.venues} />
                 <div style={ {width:600, height:450, background: 'green'} } className='initial'>
                   <Map center={location} markers={this.state.venues} />
                 </div>
                 <div className='none'>
                   {this.props.children}
+
                 </div>
 
            </div>

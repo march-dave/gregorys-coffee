@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Places from './Places'
 
 class About extends Component {
   constructor(props) {
@@ -8,9 +9,10 @@ class About extends Component {
   render() {
     return (
       <div className='text-cetner'>
-        <h1>
+        <h3>
             About!!
-        </h1>
+            <Places />
+        </h3>
       </div>);
   }
 }

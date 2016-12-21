@@ -6,6 +6,6 @@ export default class Login extends React.Component {
   }
 
   render() {
-    return (<div>MyComponent</div>);
+    return (<h3>Login</h3>);
   }
 }
