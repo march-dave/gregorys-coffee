@@ -9,10 +9,9 @@ class About extends Component {
   render() {
     return (
       <div className='text-cetner'>
-        <h3>
-            About!!
+        <h5>
             <Places />
-        </h3>
+        </h5>
       </div>);
   }
 }

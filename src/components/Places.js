@@ -1,9 +1,14 @@
 import React, {Component} from 'react';
+import superagent from 'superagent';
 
 class Places extends Component {
 
   constructor(props) {
     super(props);
+
+    this.state = {
+      venues: []
+    }
   }
 
   componentDidMount() {
@@ -23,24 +28,23 @@ class Places extends Component {
      })
  }
 
+render() {
 
-  render() {
+  const list = this.state.venues.map(
+    (venue, i) => {
+        return (
+            <li key={i}>{venue.name}</li>
+        )
+    }
+  )
 
-    const list = this.props.venues.map(
-      (venue, i) => {
-          return (
-              <li key={i}>{venue.name}</li>
-          )
-      }
-    )
-
-    return(
-      <div>
-          <ol>
-            <li>{list}</li>
-          </ol>
-      </div>);
-  }
+  return(
+    <div>
+        <ol>
+          <li>{list}</li>
+        </ol>
+    </div>);
+}
 }
 
 export default Places;
