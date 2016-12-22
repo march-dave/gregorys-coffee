@@ -49,7 +49,6 @@ class App extends React.Component {
                 </div>
                 <div className='none'>
                   {this.props.children}
-
                 </div>
 
            </div>
