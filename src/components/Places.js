@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import superagent from 'superagent';
 
 class Places extends Component {
-
   constructor(props) {
     super(props);
 

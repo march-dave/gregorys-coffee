@@ -6,6 +6,6 @@ export default class Join extends React.Component {
   }
 
   render() {
-    return (<h3>Join</h3>);
+    return (<h3>This is Join Page</h3>);
   }
 }

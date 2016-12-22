@@ -13,10 +13,8 @@ class App extends React.Component {
      super(props);
 
      this.state = {
-       conactName: 'Contact Me',
        venues: []
      }
-    //  this.upDataSearch = this.upDataSearch.bind(this);
    }
 
    componentDidMount() {
@@ -34,13 +32,6 @@ class App extends React.Component {
        })
      })
    }
-
-  //  upDataSearch(e) {
-  //   console.log('upDataSearch', e.target.value)
-  //   this.setState( {
-  //     search2: e.target.value
-  //   } )
-  // }
 
   render() {
     const location = {
