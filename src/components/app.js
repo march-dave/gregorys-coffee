@@ -48,28 +48,16 @@ class App extends React.Component {
                   <Map center={location} markers={this.state.venues} />
                 </div>
                 <div className='none'>
-                  {this.props.children}
+                  { /* this.props.children */ }
+
+
+                  { React.Children.map( this.props.children,  (child, i) => { console.log('child:::::', child); }
+                  )}
+
                 </div>
 
            </div>
 
-
-          //  var Parent = React.createClass({
-          //  doSomething: function(value) {
-          //  },
-          //  render: function() {
-          //    return (<div>{this.props.children}</div>);
-          //  }
-          // });
-          //
-          // var Child = React.createClass({
-          //  onClick: function() {
-          //    this.props.doSomething(this.props.value); // doSomething is undefined
-          //  },
-          //  render: function() {
-          //    return (<div onClick={this.onClick}></div>);
-          //  }
-          // });
 
       </div>
     );
