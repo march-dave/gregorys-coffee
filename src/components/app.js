@@ -53,6 +53,24 @@ class App extends React.Component {
 
            </div>
 
+
+          //  var Parent = React.createClass({
+          //  doSomething: function(value) {
+          //  },
+          //  render: function() {
+          //    return (<div>{this.props.children}</div>);
+          //  }
+          // });
+          //
+          // var Child = React.createClass({
+          //  onClick: function() {
+          //    this.props.doSomething(this.props.value); // doSomething is undefined
+          //  },
+          //  render: function() {
+          //    return (<div onClick={this.onClick}></div>);
+          //  }
+          // });
+
       </div>
     );
   }
