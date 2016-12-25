@@ -52,7 +52,7 @@ class App extends React.Component {
 
                   { React.Children.map( this.props.children,
                       (child, i) => {
-                          console.log('i', i);
+                          console.log('child', child);
                         }
                   )}
 
