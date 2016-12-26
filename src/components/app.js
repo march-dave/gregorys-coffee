@@ -25,7 +25,7 @@ class App extends React.Component {
      .set('Accept', 'text/json')
      .end((err, res) => {
        const venues = res.body.response.venues;
-       console.log(venues);
+       console.log('venues', venues);
 
        this.setState({
          venues: venues
@@ -52,7 +52,7 @@ class App extends React.Component {
 
                   { React.Children.map( this.props.children,
                       (child, i) => {
-                          console.log('child', child);
+                          // console.log('child', child);
                         }
                   )}
 
