@@ -48,13 +48,17 @@ class App extends React.Component {
                   <Map center={location} markers={this.state.venues} />
                 </div>
                 <div className='none'>
-                  { /* this.props.children */ }
+                  {
+                    this.props.children
+                  }
 
-                  { React.Children.map( this.props.children,
-                      (child, i) => {
-                          // console.log('child', child);
-                        }
-                  )}
+                  {
+                    React.Children.map( this.props.children,
+                      (children, child) => {
+                        console.log('children: ', children);
+                      }
+                    )
+                  }
 
                 </div>
 
