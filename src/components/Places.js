@@ -8,13 +8,13 @@ class Places extends Component {
     this.state = {
       venues: []
     }
-    this.venueClick = this.venueClick.bind(this);
+    this.venueClick = this.venueClick.bind(this, index);
   }
 
-  venueClick(e) {
+  venueClick(e, index) {
     // e.preventDefault();
     // console.log('venueClick', e.target);
-    console.log('venueClick', e);
+    console.log('venueClick', index);
   }
 
   componentDidMount() {
@@ -39,7 +39,7 @@ render() {
   const list = this.state.venues.map(
     (venue, i) => {
         return (
-            <li key={i} onClick={this.venueClick}>{venue.name}($1000)(List)</li>
+            <li key={i} onClick={ (e) => this.venueClick(e, i)}>{venue.name}($1000)(List)</li>
         )
     }
   )
