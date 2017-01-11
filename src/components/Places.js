@@ -39,9 +39,7 @@ render() {
   const list = this.state.venues.map(
     (venue, i) => {
         return (
-
             <li key={i} onClick={ (e) => this.venueClick(e, i)}>{venue.name}($1000)(List)</li>
-
         )
     }
   )
