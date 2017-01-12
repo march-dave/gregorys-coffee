@@ -50,7 +50,7 @@ class App extends React.Component {
                 </div>
 
                 <div>
-                  <About />
+                  <About Location={this.state.venues} />
                 </div>
 
                 <div className='none'>
