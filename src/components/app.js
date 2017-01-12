@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import NavBar from './NavBar';
 import Map from './Map';
 import Places from './Places';
+import About from './About';
 import superagent from 'superagent';
 
 import app from '../styles/app.scss'
@@ -47,6 +48,11 @@ class App extends React.Component {
                 <div style={ {width:600, height:450, background: 'green'} } className='initial'>
                   <Map center={location} markers={this.state.venues} />
                 </div>
+
+                <div>
+                  <About />
+                </div>
+
                 <div className='none'>
                   {
                     this.props.children

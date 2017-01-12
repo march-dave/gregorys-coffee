@@ -8,7 +8,6 @@ class Places extends Component {
     this.state = {
       venues: []
     }
-    // this.venueClick = this.venueClick.bind(this, index);
   }
 
   venueClick(e, index) {
