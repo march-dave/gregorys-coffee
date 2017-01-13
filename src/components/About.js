@@ -10,10 +10,9 @@ class About extends Component {
     return (
       <div className='text-cetner'>
         <h5>
-            <div>Tickle Tickle: {this.props.Location.map( (c, i) => {
-                console.log('i', i);
-                console.log('c', c);
-              } ) } </div>
+            <div>
+              {this.props.Location}
+            </div>
 
         </h5>
       </div>);
