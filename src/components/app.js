@@ -3,7 +3,6 @@ import { Link } from 'react-router';
 import NavBar from './NavBar';
 import Map from './Map';
 import Places from './Places';
-import About from './About';
 import superagent from 'superagent';
 
 import app from '../styles/app.scss'
@@ -50,6 +49,14 @@ class App extends React.Component {
                 </div>
 
                 <div>
+
+                  <ul>
+                      {this.state.venues.map( (c, i) => {
+                          console.log('c', c);
+                          console.log('i', i);
+                      } )}
+                  </ul>
+
                   <About Location={this.state.venues} />
                 </div>
 

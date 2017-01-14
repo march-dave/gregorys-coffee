@@ -11,8 +11,6 @@ class Places extends Component {
   }
 
   venueClick(e, index) {
-    // e.preventDefault();
-    // console.log('venueClick', e.target);
     console.log('venueClick', index);
   }
 

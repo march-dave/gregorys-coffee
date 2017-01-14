@@ -11,7 +11,7 @@ class About extends Component {
       <div className='text-cetner'>
         <h5>
             <div>
-              {this.props.Location}
+              
             </div>
 
         </h5>
