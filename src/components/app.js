@@ -57,7 +57,6 @@ class App extends React.Component {
                       } )}
                   </ul>
 
-                  <About Location={this.state.venues} />
                 </div>
 
                 <div className='none'>
@@ -74,6 +73,8 @@ class App extends React.Component {
                   }
 
                 </div>
+
+                <Places roomList={this.state.venues}/>
 
            </div>
 
