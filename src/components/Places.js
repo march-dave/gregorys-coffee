@@ -6,11 +6,14 @@ class Places extends Component {
     super(props);
   }
 
-render() {
+onClickVenue(e, index) {
+  console.log('index: ', index);
+}
 
+render() {
   const rooms = this.props.roomList.map(  (c, i) => {
       return (
-        <li key={i}>{c.name}</li>
+        <li key={i} onClick={this.onClickVenue.bind(this)}>{c.name}</li>
       )
   } )
 
